@@ -1,38 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Rustic roots website</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/images/Athlone.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-p{  text-align: center;
-    border: 0.5 px solid rgb(255,255,255,1);
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 25px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Rustic Roots Restaurant Website</title>
 </head>
 <body>
+<!-- Navbar (sit on top for large) -->
+<div class="w3-top w3-hide-small">
+    <div class="w3-bar-item w3-xlarge" id="myNavbar">
+      <a href="#" class="w3-bar-item w3-button w3-right w3-text-white">HOME</a>
+      <a href="#menu"  onclick="document.getElementById('menu').style.display='block' "class="w3-bar-item w3-button w3-right w3-text-white">MENU</a>
+      <a href="#about" class="w3-bar-item w3-button w3-right w3-text-white">ABOUT</a>
+      <a href="#Contact" class="w3-bar-item w3-button w3-right w3-text-white">CONTACT</a>
+    </div>
+  </div>
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-hide-large" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-text-white" onclick="w3_close()">HOME</a>
+  <a href="#menu"  onclick="document.getElementById('menu').style.display='block' "class="w3-bar-item w3-button w3-right w3-text-white">MENU</a>
+  <a href="#about" class="w3-bar-item w3-button w3-right w3-text-white" onclick="w3_close()">ABOUT</a>
+  <a href="#myMap" class="w3-bar-item w3-button w3-right w3-text-white" onclick="w3_close()">CONTACT</a>
+</nav>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<!-- Top menu -->
+<div class="w3-top w3-hide-large">
+  <div class="w3-black w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-large" style="font-family:serif;" onclick="w3_open()">☰</div>
+    <b>Rustic Roots Restaurant</b>
   </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Rustic Roots Restaurant</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p >Coming Soon</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">  </div>
 </div>
-
+  <!-- Header with image for Large -->
+  <header class="bgimg w3-display-container w3-grayscale-min w3-hide-small" id="home">
+    <div class=" w3-display-middle">
+        <div id="div1" class="w3-text-amber w3-hide-small" style="font-size:130px">Rustic</div>
+        <div id="div2" class="w3-text-amber w3-hide-small" style="font-size:130px">Roots</div>
+        <div id="div3" class="w3-text-amber w3-hide-small" style="font-size:130px">Restaurant</div>
+    </div>
+    <div class="w3-display-bottomright w3-padding">
+      <span class="w3-tag w3-xlarge">Working hours 12:00 - 21:30 Tuesday-Saturday</br>12:00 - 20:30 Sunday</span>
+    </div>
+  </header>
+  <!-- Header with image for small -->
+  <header class="bgimg_small w3-hide-large" id="home">
+    <div class=" w3-display-middle">
+        <!-- <div id="div1" class="w3-text-white w3-hide-large" style="font-size:100px">Rustic</div>
+        <div id="div2" class="w3-text-white w3-hide-large" style="font-size:100px">Roots</div>
+        <div id="div3" class="w3-text-white w3-hide-large" style="font-size:100px">Restaurant</div> -->
+    </div>
+  </header>
+  <!-- Automatic Slideshow Images -->
+  <!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  <!-- About Section Large-->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/images/food/Bacon_soup.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+    <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="/images/food/coffee.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+     <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="/images/food/Brazilian_shrimp_stew.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+     <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="/images/food/Chiken_Supreme.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+     <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="/images/food/Hot_chocolate.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+     <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="/images/food/Prawn_Trio.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+     <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="/images/food/Meringue.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+   <!---------to work on ------------>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About</h1><br>
+    <img class="w3-hide-large" src="/images/food/vatapa_small.jpg">
+      <h5 class="w3-center">Opened since 2022</h5>
+      <p class="w3-large">
+        The Restaurant was fully renovated and designed by owners of bussiness to classic,
+        stylish. cozy dine-in place. Inside walls decorates pictures of Ireland and piece 
+        of Athlone town map on the wall.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        Several menu's open more options for quests to choose from. Each dish have its unique touch and 
+        eye-catching presentation. Rustic Roots Restaurant offers to enjoy delightly from Local Artisan coffee to
+        traditional Irish beers or exceptional wines.
+      </p>
+      
+      
+      
+    </div>
+  </div>
+  <!-- menu starts here -->
+  <div id="menu" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <!-- Menu Container -->
+  <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+    
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+      <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <!-- images constantly changes  -->
+        <a id="myLink"></a>
+      </div>
+      <div class="w3-container menu w3-padding-32 w3-black">
+        <div>
+          <a class="w3-button" onclick=EarlyBird()>Early Bird</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=DayMenu()>Day Menu</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=BurgerMenu()>Burger Menu</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=ÀLaCarte()>À La Carte</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=JustForKids()>Just For Kids</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=DrinksMenu()>Drinks Menu</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=WhiteWine()>White Wine</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=RedWine()>Red Wine</br></a>
+        </div>
+        <div>
+          <a class="w3-button" onclick=Draught()>Draught</br></a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <br>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Large -->
+  <h1 id="Contact" class="w3-col s6 w3-center w3-hide-small"><b>Opening Hours</b></h1>
+  <h1 class="w3-col s6 w3-hide-small"><b>Contact</b></h1>
+  <div class="w3-row w3-hide-small">
+    <div class="w3-col s6 w3-center">
+      <p>Monday CLOSED</p>
+      <p>Tuesday 12.00 - 21.30</p>
+      <p>Wednesday 12.00 - 21.30</p>
+      <p>Thursday 12:00 - 21:30</p>
+      <p>Friday 12:00 - 21:30</p>
+      <p>Saturday 12:00 - 21:30</p>
+      <p>Sunday 12:00 - 21:00</p>
+    </div>
+    <div> 
+    <p>Mobile: <b>+353 85 104 6964</b></p>
+    <p>Email: <b>rusticrootsrestaurant@gmail.com</b></p>
+    <p>Address: <b>Custume Place, Church Street Athlone, Ireland N37FX02</b></p>
+    </div>
+  </div>
+  <!-- Image of location/map large -->
+  <img src="/images/design/location.png" style="width:fit-content;" class="w3-button2 w3-hide-small" onclick=Location()>
+    <!-- Contact small -->
+    <h1 class="w3-center w3-hide-large"><b>Opening Hours</b></h1>
+    <div class="w3-center w3-hide-large">
+      <p>Monday CLOSED</p>
+      <p>Tuesday 12.00 - 21.30</p>
+      <p>Wednesday 12.00 - 21.30</p>
+      <p>Thursday 12:00 - 21:30</p>
+      <p>Friday 12:00 - 21:30</p>
+      <p>Saturday 12:00 - 21:30</p>
+      <p>Sunday 12:00 - 21:00</p>
+    </div>
+    <h1 class="w3-hide-large w3-center"><b>Contact</b></h1>
+    <div class="w3-hide-large">
+      <div> 
+      <p class="w3-center">Mobile:</br> <b>+353 85 104 6964</b></p>
+      <p class="w3-center">Email:</br> <b>rusticroots</br>restaurant@</br>gmail.com</b></p>
+      <p class="w3-center">Address: </br><b>Custume Place, Church Street Athlone, Ireland N37FX02</b></p>
+      </div>
+    </div>
+   <!-- Image of location/map small -->
+  <img src="/images/design/location_small.png" style="width:fit-content;" class="w3-button2 w3-hide-large" onclick=Location()>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://www.facebook.com/profile.php?id=100085073442552"><i class="fa fa-facebook w3-xxxlarge"></i></a>
+    <a href="https://www.instagram.com/rusticrootsrestaurant/"><i class="fa fa-instagram w3-xxxlarge"></i></a>
+    <!-- other icons not working because social media didnt seted yet -->
+  </footer> 
 </body>
+<script src="/jscript/myscript.js" defer></script> 
 </html>

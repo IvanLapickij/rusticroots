@@ -50,7 +50,7 @@ window.onclick = function(event) {
 // MENU images - on click open new window
 
 BurgerMenu = () => {
-window.open("menu/MENU_BURGER_A4ai.pdf")
+window.open("menu_pdf/MENU_BURGER_A4ai.pdf")
 }
 JustForKids = () => {
 window.open("KIDS_MENU.pdf")

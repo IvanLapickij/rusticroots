@@ -53,28 +53,28 @@ BurgerMenu = () => {
 window.open("menu_pdf/MENU_BURGER_A4ai.pdf")
 }
 JustForKids = () => {
-window.open("KIDS_MENU.pdf")
+window.open("menu_pdf/KIDS_MENU.pdf")
 }
 EarlyBird = () => {
-window.open("MENU_EARLY_A4.pdf")
+window.open("menu_pdf/MENU_EARLY_A4.pdf")
 }
 DayMenu = () => {
-  window.open("MENU_DAYMENU_A3.pdf")
+  window.open("menu_pdf/MENU_DAYMENU_A3.pdf")
 }
 ÀLaCarte = () => {
-  window.open("menu_lacarte.pdf")
+  window.open("menu_pdf/menu_lacarte.pdf")
 }
 DrinksMenu= () => {
-  window.open("DRINKS_MENU.pdf")
+  window.open("menu_pdf/DRINKS_MENU.pdf")
 }
 WhiteWine = () => {
-  window.open("White_Wine.pdf")
+  window.open("menu_pdf/White_Wine.pdf")
 }
 RedWine = () => {
-  window.open("Red_Wine.pdf")
+  window.open("menu_pdf/Red_Wine.pdf")
 }
 Draught = () => {
-  window.open("Draught.pdf")
+  window.open("menu_pdf/Draught.pdf")
 }
 
 // location on

@@ -218,14 +218,14 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .bgimg {
   background-repeat: no-repeat;
   background-size:cover;
-  background-image: url("/images/design/Restaurant_image_background.jpg");
+  background-image: url("/images/design/DSC_0103.JPG");
   min-height: 80%;
   background-attachment:fixed;
 }
 .bgimg_small{
   background-repeat: no-repeat;
   background-size:cover;
-  background-image: url("/images/design/Restaurant_image_777.jpg");
+  background-image: url("/images/design/DSC_0103.JPG");
   min-height: 80%;
   background-attachment:fixed;
 }

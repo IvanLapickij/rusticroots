@@ -74,7 +74,7 @@ RedWine = () => {
   window.open("menu_pdf/Red_Wine.pdf")
 }
 Draught = () => {
-  window.open("menu_pdf/Draught.pdf")
+  window.open(href="menu_pdf/Draught.pdf")
 }
 
 // location on

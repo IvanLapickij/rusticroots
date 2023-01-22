@@ -225,7 +225,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 .bgimg_small{
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:auto;
+  background-position: right;
   background-image: url("/images/design/DSC_0103.JPG");
   width: 80%;
   min-height: 80%;

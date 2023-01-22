@@ -280,6 +280,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   size: 20px;
 }
 p{
-  background-color: rgba(104, 95, 95, 0.4); border-radius:20px;
+  border-radius:20px;
   size: 50px;
 }

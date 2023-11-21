@@ -2,7 +2,7 @@ Introducing code to Rustic Roots Restaurant Version 1
 Rustic Roots Restaurant Version 1 website, crafted using HTML, CSS, and JavaScript.
 
 Visit my brand-new website Version 2 at www.rusticrootsrestaurant.com, where i have elevated the user experience with React, TypeScript, and Bootstrap.
-Code Version 2 is hidden from publicity. Please contact me for permission to see.
+Code Version 2 is hidden from publicity. Please contact me for permission to see code , or if you want to collaborate on similar project.
 Auto sliding images
 ![image](https://github.com/IvanLapickij/rusticroots/assets/116425938/a9905876-b07d-4659-bc0d-d6f7d0d5004a)
 Fetched Google reviews & maps using API's

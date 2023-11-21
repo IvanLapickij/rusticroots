@@ -11,5 +11,6 @@ Fetched Google reviews & maps using API's
 Menu displayed as pdf with option to download :
 ![image](https://github.com/IvanLapickij/rusticroots/assets/116425938/441bc43c-737b-43ec-a1c0-7c29f529c48b)
 Menu items displayed as text for more keywords to direct into restaurant page.
-![image](https://github.com/IvanLapickij/rusticroots/assets/116425938/cff1659d-295a-49b0-bea1-118f5973915d)
+![image](https://github.com/IvanLapickij/rusticroots/assets/116425938/d5d9d69d-9455-4cc6-8dcc-2b3417bdb4b0)
+
 
